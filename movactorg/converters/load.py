@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #   movact: A program that reads, runs and converts hypertext fiction files
-#   Copyright (C) 2009  Niels Serup
+#   Copyright (C) 2009, 2010  Niels Serup
 
 #   This file is part of movact.
 #
@@ -94,8 +94,8 @@ It would also create a file named 'style.css' with the contents of 'tmpl.css'\
 		   (arg[0][:1] == '-' and arg[0][1:2] != '-' and arg[0].find('v') != -1)
 		   or arg[0] == '--version'):
 			print """\
-movact-convert 0.5
-Copyright (C) 2009  Niels Serup
+movact-convert 0.5.1
+Copyright (C) 2009, 2010  Niels Serup
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.\

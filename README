@@ -8,7 +8,7 @@ With movact everyone is able to create hypertext fiction using a very simple syn
 This is the combined README/manual.
 
 ##########################################################################
-##  README: Copyright © 2009  Niels Serup
+##  README: Copyright © 2009, 2010  Niels Serup
 ##  
 ##  Permission is granted to copy, distribute, and/or modify this document
 ##  under the terms of the GNU Free Documentation License, Version 1.3
@@ -24,7 +24,7 @@ This is the combined README/manual.
 
 Basic details
 =============
-The current version of movact is 0.5. This version can be considered quite stable, although it is the first version to be released.
+The current version of movact is 0.5.1. This version can be considered quite stable, although it is the second version to be released.
 
 How to get movact
 -----------------
@@ -35,8 +35,8 @@ License information
 -------------------
 I have chosen to make movact available under the GNU General Public License version 3 or (optionally) any later version. See the file COPYING.GPL for the full license text.
     
-    movact 0.5
-    Copyright © 2009  Niels Serup
+    movact 0.5.1
+    Copyright © 2009, 2010  Niels Serup
     License GPLv3+: GNU GPL version 3 or later
     <http://gnu.org/licenses/gpl.html>
     movact is free software: you are free to change and redistribute it.
@@ -49,7 +49,7 @@ More specifically, the files licensed under CC BY-SA 3.0 are:
    - art/movact-logo-256.png
    - art/movact-logo-64.png
    - art/movact-logo.svg
-These three files are all copyright © 2009 Niels Serup
+These three files are all copyright © 2009, 2010 Niels Serup
 
 
 Contact

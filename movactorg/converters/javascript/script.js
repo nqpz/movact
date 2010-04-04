@@ -1,6 +1,6 @@
 /*
     Template script for movact-convert: a JavaScript movact frontend
-    Copyright (C) 2009  Niels Serup
+    Copyright (C) 2009, 2010  Niels Serup
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

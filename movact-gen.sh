@@ -5,6 +5,7 @@ cp -a . $HOME/movact
 
 cd $HOME/movact/
 find -name '*~' -type f -exec rm {} \;
+find -name '*.pyc' -type f -exec rm {} \;
 find -name '#*#' -type f -exec rm {} \;
 rm -r bak/ .bzr/
 rm movact-gen.sh

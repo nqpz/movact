@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #   movact: A program that reads, runs and converts hypertext fiction files
-#   Copyright (C) 2009  Niels Serup
+#   Copyright (C) 2009, 2010  Niels Serup
 
 #   This file is part of movact.
 #

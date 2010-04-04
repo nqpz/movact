@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #   movact: A program that reads, runs and converts hypertext fiction files
-#   Copyright (C) 2009  Niels Serup
+#   Copyright (C) 2009, 2010  Niels Serup
 
 #   This file is part of movact.
 #
@@ -55,8 +55,8 @@ from movactorg.core.run import *
 HELPTEXT = '\nThis is the GUI frontend using GTK.' ##
 #####################################################
 VERSIONTEXT = """\
-movact-gtk 0.5
-Copyright (C) 2009  Niels Serup <ns@metanohi.org>
+movact-gtk 0.5.1
+Copyright (C) 2009, 2010  Niels Serup <ns@metanohi.org>
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.\
@@ -370,8 +370,8 @@ class Runner(GenericRunner):
 	def show_about(self, b = None):
 		dialog = gtk.AboutDialog()
 		dialog.set_title('About movact-gtk')
-		dialog.set_version('0.5')
-		dialog.set_copyright('Copyright © 2009 Niels Serup')
+		dialog.set_version('0.5.1')
+		dialog.set_copyright('Copyright © 2009, 2010 Niels Serup')
 		dialog.set_license("""\
 movact-gtk is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
