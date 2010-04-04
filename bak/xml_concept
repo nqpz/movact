@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<story>
+	<meta>
+		...
+	</meta>
+	<main>
+		<part>
+			<name>42</name>
+			<content>
+				<line>afagb</line>
+				<pointer>
+					<part>gh</part>
+					<text>Go there!</text>
+				</pointer>
+			</content>
+		</part>
+	</main>
+</story>

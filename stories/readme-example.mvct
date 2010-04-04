@@ -1,0 +1,30 @@
+#!/usr/bin/env movact
+
+#   Author and license
+ZERO
+
+...META
+..title
+A great story
+..start
+Welcome to the greatest story. You will experience experiences.
+..end
+That was that.
+
+
+...MAIN
+..start
+You have no recollection of who you are or where you are.
+In front of you stands a giant cat. What do you do?
+.cat-run Run for your life
+.10 Count to 10
+.cat-talk Talk to the cat
+
+..cat-run
+[TEXT]...
+
+..10 // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+[TEXT]...
+
+..cat-talk
+[TEXT]...

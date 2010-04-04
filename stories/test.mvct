@@ -1,0 +1,94 @@
+#!/usr/bin/env movact
+#sgfsg
+      ####### YOU CAN FREELY USE THIS STORY IN ANY WAY YOU WANT TO #######
+#er
+ZERO
+...META
+..points
+/*
+a*
+*/
+(
+	('A. ', ('A', 'a')),
+	('B. ', ('B', 'b')),
+	('C. ', ('C', 'c')),
+	('D. ', ('D', 'd'))
+)
+..title
+Simple story
+\..4nd 4 r341 0n3, 47 7h47!
+..start
+Welcome to:
+ ~~~~~~~~~~~~~~~~~~~~~~~
+ ** The Simple Story! **
+ ¨¨~~~~~~~~~~~~~~~~~~~¨¨
+..start-gui
+Welcome to:
+THE SIMPLE STORY!
+..end
+ Goodbye.
+ 
+---
+ ..end-gui
+Bye-bye.
+   ..again
+Not possible! Try again.
+[end]
+
+...MAIN
+  ..start
+This is the starting section.// That was section 0
+abc
+// This is a comment.
+# This is also
+# a comment.
+Oh no! \// This is not /* but this is */a comment. /* NEWLINE
+COMMENT */\# This is also not a comment./* NEWLINE
+NEW NEWLINE
+IT CONTINUES...
+COMMENT ENDS */.1 Go to section 1.#REALLY!
+/*
+So far, so good.
+*/
+.2 Go to section 2.
+
+     ..1
+This is section 1!
+.3 Go to section 3.
+  .1 Stay still.
+.4 Travel to section 4.
+  .2 Go to section 2.
+
+..2
+This is section 2..
+\---
+\\/* NOT
+COMMENT */ (with extra backslash)
+.house Enter house.
+Text can be written anywhere.
+.4 Or go to section 4.
+
+..house
+You have entered the house and thereby completed this story.
+
+/* aa*/
+# afasdf
+..4
+This.. is.. section 4.
+.start Go to section 0.
+.house Enter house.
+\[end]
+---//This makes the above empty line visible.
+
+..3
+This is section 3. This section has info on the movact syntax.
+
+If you want to write a lot of text that would normally be interpreted as comments, you can escape the comments using the backslash ("\") character. You can also escape dots and other characters that have a meaning in movact. However, escaping stuff can sometimes be very boring. An alternative to escaping is including vulnerable text within "\%$" (starting point) and "$%" (ending point). "\%$" will thereby have to be escaped when after a "\$%" and before another "\%$".
+%$// This "uncomment" isn't escaped!$%abc
+---
+%$
+%$This!!\$%
+[end]$%
+.house Enter house.
+
+[end]

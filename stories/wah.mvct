@@ -1,0 +1,429 @@
+#!/usr/bin/env movact
+
+#   This work is licensed under the Creative Commons
+#   Attribution-ShareAlike 3.0 Unported license, see
+#   <http://creativecommons.org/licenses/by-sa/3.0/>
+#   Author: Niels Serup <ns@metanohi.org>
+
+ZERO# movact will fail without this!
+
+/* META information */
+...META
+..title
+WAH
+..start
+Welcome to WAH...
+An interactive story featuring non-stop action.
+..end
+This wonderful story has now come to an end. But do not worry! There are other ends as well.
+
+
+/* MAIN information */
+...MAIN
+..start
+You are standing in an airport. You do not know what airport.
+What do you do?
+.1 Look for help.
+.2 Walk outside.
+.3 Do nothing.
+
+..1
+You stumble upon a person, whom you ask for help. Sadly, the person turns out to be a werewolf.
+What do you do now?
+.4 Take it easy. You know it won't attack you 'cos you got lots 'o courage.
+.5 Run away.
+
+..2
+It's a jungle outside. Buses, gorillas, guerillas, elephants, they're all here. You notice a small shop.
+.6 Enter the shop.
+.7 Don't enter the shop.
+
+..2a
+It's a jungle outside. Buses, gorillas, guerillas, elephants, they're all here. You notice a small shop.
+.7 Enter the shop (as if).
+.6 Don't enter the shop (as if).
+
+..3
+\..Hmm.. Well, you're still in the unknown airport. While nothing is going on, you get the idea that you might as well..?
+.8 Think.
+.9 Not think.
+.10 Travel to the moon.
+
+..4
+You might be brave, but the werewolf *is* quite scary. As its claws approach your flesh you wonder if staying was such a good idea.
+.11 But no matter what, you know that the werewolf will be beaten!
+.5 Hence you flee.
+
+..5
+WAAAH! WAAAH! You flee in terror. The werewolf does not notice your escape. You are relieved. Looking back, you understand that the werewolf was never trying to kill you. It just wanted to befriend you.
+.12 Go back and cheer him up.
+.13 Bullshit. Just hurry up 'n escape.
+
+..6
+You approach the shop owner. He seems nice. Wearing a mixture of non-colored cloths, you assume that he is relatively poor. What do you do?
+.14 Buy something.
+.15 Steal his money.
+
+..7
+You keep on walking until you unknowingly accidentally step on a dead bat. You don't notice it, but everybody else do. Without further ado, they begin to hunt you down. Apparently a dead bat is sacred or something in this foreign country.
+What do you do?
+.16 RUNRRUNRUN!
+.17 Stay back and talk.
+
+..8
+Your mind wanders. You try to remember why you are in the airport, but nothing pops up. The airport looks very ordinary, and you are unable to seriously figure anything out.
+
+A grue suddenly captures you. You are in deep trouble. What do you do?
+.18 Stay still.
+.19 Attempt to escape.
+
+..9
+You do nothing.
+.20 Keep doing nothing.
+.21 Keep doing nothing, but in another way.
+.22 Do something.
+
+..10
+Even though it at first seems difficult, if not impossible, you succeed in the end. A nice lady rents you a rocket, and within hours you stand on the surface of the moon. What do you say?
+.23 "One step for man, one step for humanity."
+.24 "One step for man, two steps for humanity."
+.25 "Yeah!"
+
+..11
+You attempt to attack the vicious werewolf. You fail. It kills you.
+
+You are now dead. Three beings approach you. They tell you to choose between the following:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo (somewhere in the middle)
+
+..12
+Well, he does seem to be quite sad. You ask him what's wrong, but he doesn't answer. Instead he eats you.
+
+You are now dead. Three beings approach you. They tell you to choose one of the following:
+.hell-start Hell
+.heaven-start Heaven
+.limbo-start Limbo (somewhere in the middle)
+
+..13
+Your decision seems to be quite wise. The werewolf now receives help from a newly teleported werewolf trio. They yell at you, but you just keep on running. And running. As a matter of fact, you don't stop until you're outside the airport. Then you collapse.
+.29 Collapse hard.
+.30 Search for a pillow, then collapse.
+
+..14
+You buy an orange.
+.31 Eat it.
+.32 Do not eat it.
+
+..15
+"How am I supposed to steal his money?" you wonder. While you smile at him, your thoughts are in the process of being evilized. In the end you do this:
+
+   1. YOU:        "Oh, incredible! A three-headed monkey!" (points somewhere)
+   2. SHOP OWNER: "What? Where?" (looks in the pointed area)
+   3. YOU:        "There! There!" (hits shop owner and steals stuff)
+
+It works. You now have an odd feeling. What is it?
+.33 Guilt
+.33 Guilt
+.33 Guilt
+.34 Excitement
+.33 Guilt
+
+..16
+You don't stop running until after two hours. Then you collapse.
+.30 Collapse on something soft.
+.29 Collapse on something hard.
+
+..17
+"But I didn't know!" you keep telling the foreigners (who are not foreigners, considering the fact that YOU are in THEIR country). They don't seem to care much, and within minutes you are completely surrounded.
+
+Out of nowhere a fairy appears.
+
+.35 Speak to the fairy.
+.35b Ignore the fairy.
+.2a Travel back in time (as if that was possible..).
+
+..18
+You realize that it's not very funny to be captured. The grue never stops offending you, and you don't get to eat a lot. What do you do?
+.19 Attempt to escape.
+.18 Stay still.
+
+..19
+When the grue looks away for a short moment, you shred the cage into pieces and escape, your running speed matching the velocity of 10000 bullets. The grue is angry, but it does nothing. IT just looks at you. Intensely. With burning red eyes.
+
+In the end, you're killed. Three beings then approach you and ask you to choose between the following:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo (somewhere in the middle)
+
+..20
+You fall asleep.
+.36 Sleep for a week.
+.37 Sleep for a month.
+
+..21
+You look out a window. Noting the sky, you realize that this airport is strange. It's as if the airport is.. closed. The sky is blue and pretty, but there are no planes. There is nothing. When you think about it, currently you're actually doing something. You promised yourself to relax. Do you want to reconsider your choice?
+.38 Yes
+.36 No
+
+..22
+You don't know what to do. However, to do something, you do not need to know what to do. You can just do something at random. And that is excactly what you do. A completely randomized act chosen by a random algorithm that randomly selects a number.
+
+You jump.
+
+Reflecting upon your action, nothing happens. The airport is completely empty. Suddenly it's just a big white space. You wonder why that is, considering the fact that just a while ago, everything was normal.
+So, what to do?
+.39 Jump again.
+.40 Run/walk.
+
+..23
+You start exploring the moon. A lot of craters appear before you. One of the craters seems different.
+.41 Examine it.
+.42 Keep walking.
+
+..24
+You are killed by an alien. Three beings approach you. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo (somewhere in the middle)
+
+..25
+Your mind wanders. This is, after all, the moon, somewhere only a few humans has been. You are taken back by the thought.
+.23 Explore the moon.
+.24 Think.
+
+..29
+You hit the ground head first. You die.
+
+It seems that you are then being teleported to somewhere.. distant. Three beings approach you and ask you to choose between the following places:
+.hell-start Hell
+.heaven-start Heaven
+.limbo-start Limbo
+Note that it is unlikely that you can be revived.
+
+..30
+You manage to collapse on a bundle of hay. It's relatively soft and you only faint. When you are done fainting..
+.43 Continue!
+
+..31
+It has a nice taste. It takes you a minute or so to eat it.
+
+A couple of minutes later you feel sick. You realize that the orange was heavily poisoned.
+
+You eventually die. Three beings then approach you and ask you to choose between..
+.heaven-start Heaven
+You are told that "it will be a holy experience".
+.hell-start Hell
+You are told that "hell has it all".
+.limbo-start Limbo
+You are told that "this is for those in limbo".
+
+..32
+Well, it doesn't seem to be that tasty. You drop it. The shop owner notices this and attacks you. You die.
+
+Three beings approach you and force you to pick one of these places to go to:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..33
+Yes, that's true. Stealing from such an old man was not a nice thing to do, you think. You decide to not care, however, as the world is already corrupt.
+
+
+  Or..?
+
+You're not really sure what to do..
+.44 Go back.
+
+But still, it would embarass you to go back..
+.45 Keep on walking.
+
+..34
+You get an adrenaline kick and decide to steal other stuff as well. You have soon robbed most of the shops in your area. All that's left to do is to..
+.45 Keep on walkin'
+.46 Rob the bank
+
+..35
+You speak to the fairy. You tell her what has happened so far. She seems to ignore you, but soon enough she tells you that you appeared here for a reason.
+
+   "You are The Chosen One"
+
+The fairy continues to talk about your newly aquired profession as a saviour, until the people kill you with their mind power.
+
+After you disappear, three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..35b
+Even though you have never met a fairy before, you choose to completely ignore her. You find that it is a wise choice, though you do not know why. You just know. By knowing something while not knowing why you know it, a paradox appears. The paradox terminates you.
+
+After you disappear, three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..36
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+
+You have slept for too long a time. You have died of hunger.
+
+
+After you die, three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..37
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+zzZZzZZzZzZZZzZzZZZZzZZZzzZ
+
+You have slept for too long a time. You have died of hunger.
+
+After you die, three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..38
+So, you're not going to relax. As a matter of fact, you begin to wonder.. Wonder whether it would be a good idea to maybe
+
+    TRAVEL BACK IN TIME!
+
+.start TRAVEL BACK!
+
+..39
+This time, you jump a bit higher. You land on the moon. What do you say?
+.23 "One step for man, one step for humanity."
+.24 "One step for man, two steps for humanity."
+.25 "Yeah!"
+
+..40
+You run for hours. You do not know this, as your perception of time seems to be temporarily non-existent. At least it's not very functional.
+
+You lose your mind.
+
+Three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..41
+It's full of water! And.. Cats? Cats on the moon?
+
+You don't get it.
+
+.41b Examine the scene more closely.
+.42  Escape!
+
+..41b
+The cats seem to be dancing. They appear to be happy, though you can't even comprehend how they are able to breathe. You realize that it must be because of a source of oxygen.
+
+You take off your helmet. Then you die.
+
+Three beings appear. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..42 # Meaning of life, haha..
+You walk on. It's funny how the surface of the moon doesn't have a lot of variation. At one point you see a crater.
+.42 Keep walking.
+.41 Check it out.
+
+..43
+It seems that your mind has become unstable while you were mentally gone. Now you are only able to 5p34k 1n 1337 -- and 0nly in a v3ry n00b f0rm of 1337.
+
+u haz n0 idea watz d0. r34l1ty ftw u fink. U 3vntully di54p3ar.
+
+3 1337 cr4x0rz 4p34r. Tehm tellz u 2go2 1 of tehse pl4ces:
+.heaven-start H34\/3|\|
+.hell-start H311
+.limbo-start 1_1|\/||}0
+
+..44
+The old man greets you. He telkjdndxdjuddchjudjcJJhzfjudfxjJJ
+JJJHYUjdjjfimrrj8iie4jjdu5mikdr5ieo4krk-asg:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+..45
+You're still not really sure what to do..
+.44 Go back.
+
+But still, it would embarass you to go back..
+.45 Keep on walking.
+ 
+..46
+It's like a western. You're the bad guy who robs banks as a hobby. With a gun in your right hand, you enter what you believe to be a bank. It is, however, a prison. You are arrested.
+.47    Plead for forgiveness
+.start Travel back in time
+
+..47
+They don't care. You are put into a magical cell that automatically makes its prisoners vanish within a day or so. When you're gone, three beings approach you. They tell you to go to one of these places:
+.heaven-start Heaven
+.hell-start Hell
+.limbo-start Limbo
+
+
+
+########################################################################
+# This is where the real game begins. No matter how you do in the first
+# part, you'll always end up in either 'heaven-start', 'hell-start' or
+# 'limbo-start'.
+########################################################################
+
+..heaven-start
+It's suprisingly dark. You wonder why that is. Did you choose the wrong path, or were you simply unlucky? Or lucky? Or just somewhere in the middle?
+
+Having been an atheist since before you were born, you are still not sure if this is really happening. Then you wake up.
+
+You realize that waking up from a dream was a seriously simple solution to an odd story. You are sorry.
+
+
+..hell-start
+So, you're in hell. Or..? It seems that hell never existed. You realize that it doesn't even matter. You do not know what to do now.
+
+If you are not aware of this, you have now ended up at an **open ending**.
+
+
+..limbo-start
+Well done! Choosing LIMBO was a good idea after all. Now, you rejoice.
+
+# I hope someone either improves this story or creates another, way longer, one.
+

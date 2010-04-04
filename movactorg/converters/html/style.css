@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'dejavu sans', arial, verdana;
+	font-size: 14px;
+	color: #000;
+	background-color: #fff;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 10% auto 0 auto;
+	padding: 10px;
+	background-color: #99ffff;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 23px;
+}
+
+a:link, a:visited {
+	color: #3344ff;
+	background-color: #eee;
+}
+
+a:hover {
+	color: #5566ff;
+	background-color: #fff;
+}
+
+hr {
+	margin: 0 0 5px 0;
+	border: 1px solid #333;
+}
+
+/*      Feel free to modify this file without attributing anyone.     */

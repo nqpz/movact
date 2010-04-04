@@ -1,0 +1,435 @@
+=========================================================================
+ movact: a program that reads, runs and converts hypertext fiction files
+=========================================================================
+
+movact is a small suite of software that aims to aid in the development and use of hypertext fiction.
+With movact everyone is able to create hypertext fiction using a very simple syntax. It is hoped that the stories created for movact be distributed throughout the world (and ultimately the universe) for everyone to read and perhaps build upon, though no one is forcing anyone.
+
+This is the combined README/manual.
+
+##########################################################################
+##  README: Copyright © 2009  Niels Serup
+##  
+##  Permission is granted to copy, distribute, and/or modify this document
+##  under the terms of the GNU Free Documentation License, Version 1.3
+##  or any later version published by the Free Software Foundation;
+##  with no Invariant Sections, with no Front-Cover Texts,
+##  and with no Back-Cover Texts.
+##  See the file COPYING.GFDL for the full license text.
+##  
+##  This document is available under the Creative Commons
+##  Attribution/Share-Alike License 3.0 Unported license.
+##  See the file COPYING.CC-BY-SA for the full license text.
+##########################################################################
+
+Basic details
+=============
+The current version of movact is 0.5. This version can be considered quite stable, although it is the first version to be released.
+
+How to get movact
+-----------------
+movact will always be online at <http://metanohi.org/projects/movact/>, where documentation will also be available. Both new and old releases will be downloadable.
+
+
+License information
+-------------------
+I have chosen to make movact available under the GNU General Public License version 3 or (optionally) any later version. See the file COPYING.GPL for the full license text.
+    
+    movact 0.5
+    Copyright © 2009  Niels Serup
+    License GPLv3+: GNU GPL version 3 or later
+    <http://gnu.org/licenses/gpl.html>
+    movact is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+This license applies to all files in the "movactorg/" directory, except for the files found in the "external/" subdirectory. Those files are released under GPL-compatible licenses.
+
+movact also has art. It's located in the "art/" directory. All graphics are released under the Creative Commons Attribution/ShareAlike 3.0 Unported license ("CC BY-SA"). See the file COPYING.CC-BY-SA for the full license text.
+More specifically, the files licensed under CC BY-SA 3.0 are:
+   - art/movact-logo-256.png
+   - art/movact-logo-64.png
+   - art/movact-logo.svg
+These three files are all copyright © 2009 Niels Serup
+
+
+Contact
+-------
+movact was created by Niels Serup during the last months of 2009. Niels is also the person who maintains movact as well as the one who's writing this readme. You can contact him at <ns@metanohi.org>.
+
+
+How to contribute to movact
+---------------------------
+The movact project does not recommend any special way of arranging Python code, though it recognizes that one uniform way of coding increases readability. Just remember to do it nicely without resorting to doing it non-nicely.
+
+
+This readme
+-----------
+Because movact is so small, this readme is currently also the manual. It is dual-licensed under GFDL and CC BY-SA, as seen in the top of the manual.
+
+
+
+Dependencies
+============
+For movact to run, you must use at least Python 2.4 (though 2.3 may work with limited functionality). To run the GTK+ frontend, you should also have PyGTK 2.6 or newer installed.
+
+Python can be downloaded at <http://www.python.org/>.
+PyGTK can be downloaded at <http://www.pygtk.org/>.
+Note that most modern GNU/Linux distributions have both Python and PyGTK in their repositories for easy downloading and installing.
+On DEB-based systems (like Debian, gNewSense, etc.) you can do this:
+
+    $ sudo apt-get install python python-gtk2
+
+On RPM-based systems (like Fedora, CentOS, etc.) you can do this:
+
+    $ sudo yum install python pygtk2
+
+
+
+Composition
+===========
+movact is modula-oriented. It consists of several parts.
+
+Core
+----
+The core of movact takes care of the basic stuff, such as loading and parsing.
+
+Frontends
+---------
+The frontends are used to actually *run* movact files after they have been loaded and parsed in core. There are currently only two frontends in movact: a GUI frontend in GTK+ and a terminal frontend in.. well, text. Support for other frontends may come in future releases.
+
+Converters
+----------
+movact runs fine without the converters, but the converters do not run without the movact core. It is currently possible to convert movact data files to 4 formats: HTML (with one page for each movact part), HTML+JavaScript (with only one HTML file), XML and pure text.
+
+Art
+---
+movact has its own mascot! Now, /that's/ important! Graphics are used to spice things up a little. It is believed that the mascot is a mammal, but that's the only known fact about it.
+
+
+
+Installing
+==========
+movact currently does not support a true installation method. Instead, it relies on the script "fake-install.sh". You can use this script to link the different movact frontends, as well as the movact converter, to "/usr/local/bin/", which means that you can run movact just by typing "movact-gtk" or "movact-terminal" in a terminal and convert movact files just by typing "movact-convert" in a terminal. The script also asks you to choose a default movact frontend, which will be executed when "movact" is typed in a terminal.
+
+
+
+Included stories
+================
+movact includes a small variety of stories: One "real" story consisting of several hundreds lines of human-readable text, plus a few mini stories that exist mainly for the purpose of testing the movact parser.
+
+The "real" story is available under the CC BY-SA 3.0 Unported license.
+
+
+
+movact in command
+=================
+YOU have the freedom to decide what movact does and what it doesn't -- though only to some extent. By default, movact tries to autoload progress when a user opens a story; this can be disabled. By default, movact autosaves progress whenever the user does something; this can be disabled as well.
+When using the terminal frontend, there are a couple of basic commands that are neccessary to know:
+   - /back   : go one step back
+   - /reset  : reset story and restart at the beginning
+   - /current: make movact display the current part name
+   - /open   : open a new file
+   - /load   : load a savefile
+   - /save   : save progress
+These commands can be modified by movact stories, so they are not necessarily always like this.
+When using the GTK+ frontend, just use the buttons.
+
+movact saves to and loads from "$HOME/.movact/autosaves/" (e.g. "/home/niels/.movact/autosaves/").
+
+
+Using the command line
+----------------------
+There are several advantages of running movact in a terminal (or "console"):
+
+  + You will be able to see any eventual errors that may appear.
+  + You can pickle (see <http://docs.python.org/library/pickle.html>)
+    a story for quicker loading times.
+  + You can tell movact not to autosave or not to autoload.
+
+Using a terminal will still allow you to use a graphical frontend.
+
+If you plan to run movact in a terminal, remember to do this at some point:
+
+    $ movact --help
+
+And, eventually, this:
+
+    $ movact-convert --help
+
+These commands will display a short piece of text that will show you how to handle movact.
+
+
+
+Syntax
+======
+A large part of movact is its syntax. A typical movact document looks like this:
+
+    #!/usr/bin/env movact
+
+    # Author and license
+    ZERO
+
+    ...META
+    ..title
+    A great story
+    ..start
+    Welcome to the greatest story. You will experience experiences.
+    ..end
+    That was that.
+
+
+    ...MAIN
+    ..start
+    You have no recollection of who you are or where you are.
+    In front of you stands a giant cat. What do you do?
+    .cat-run Run for your life
+    .10 Count to 10
+    .cat-talk Talk to the cat
+
+    ..cat-run
+    [TEXT]...
+
+    ..10 // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    [TEXT]...
+
+    ..cat-talk
+    [TEXT]...
+
+The basic syntax of movact should be possible to perceive looking at the example.. I guess. To get a better grasp of how the syntax is, it is a good idea to examine and modify the existing stories in the 'stories/' directory. Note that the first line in the example is used to more easily run movact on systems that support '#!' lines. On other systems it will just be ignored. When it works, however, it should be possible to simply type
+
+    $ ./a-story
+
+..instead of
+
+    $ movact a-story
+
+
+Composition
+-----------
+movact document consists of two parts: a META part and a MAIN part. Each part can be separated into subparts. META subparts cannot be separated further, but MAIN subparts can. In ascii art a movact document looks like this:
+
+Document
+    |
+    ·-- META part
+    ·       |
+    ·       ·-- subpart
+    ·       |
+    ·       .-- .......
+    |
+    ·-- MAIN part
+            |
+            ·-- subpart
+            ·      |
+            ·      ·-- paragraph | reference
+            ·      |
+            ·      ·-- .....................
+            |  
+            ·-- .......
+
+Even if your document layout/syntax seems to be ok, that does not have to be the case. When writing movact documents, one thing is absolutely necessary: the version. This isn't the version of the story you're writing (there's no way to specify that as a separate value) but the version of the parser that you're calling (a bit similar to "doctype" in HTML words). The version must always be the first real line in a story, i.e. it must be preceded only by comments and empty lines or lines with spaces only.
+Currently, the only supported version is "ZERO".
+
+Overview:
+    ·---------------------------------------------------------·
+    |_ ...xxx    ~  xxx = name of part (either META or MAIN) _|
+    |_ ..xxx     ~  xxx = name of subpart                    _|
+    |  .xxx yyy  ~  xxx = reference to xxx, written as yyy    |
+    ·---------------------------------------------------------·
+
+Except in the case of references, xxx can include spaces.
+
+You can indent text any way you want to. When reading the name of a part or subpart, movact will trim it for spaces. Both '..start' and '..start   ' count as 'start', whereas '..start    x' counts as 'start    x'.
+
+META part
+~~~~~~~~~
+META subparts can be used to customize movact. A META subpart will always look something like this:
+
+    ..open button
+    Åben
+
+This will modify the text of the "open a file"-button in GUI frontends to "Åben". The default is "Open".
+It is not a need to actually specify a META part. If a META subpart is not specified, the value will default to.. a default value. Default values are always strings, except in the case of the 'point' subpart and the 'confirmed' subpart, in which lists are used.
+
+    To see the default values, look at 'movactorg/core/defaults.py'.
+
+To modify 'point' and 'confirmed', write something like this in your META part:
+
+    ..point
+    (
+        ('A. ', ('A', 'a')),
+        ('B. ', ('B', 'b')),
+        ('C. ', ('C', 'c'))
+    )
+
+    ..confirmed
+    ('y', 'yes')
+
+This list syntax is borrowed from Python. If you want only *one* list item, do this:
+
+    ('litem1', )
+
+movact only uses the values defined in 'movactorg/core/defaults.py', but you can specify other meta data as well, though it has no use. In general, if you want to specify special information, do it using comments at the top or bottom of your file.
+
+MAIN part
+~~~~~~~~~
+MAIN subparts are necessary. Stories consist of MAIN subparts. A story will need at least one MAIN subpart to actually function, though it will need many more to actually resemble a story. The *one* very important subpart *must* be named 'start'. So, *all* movact files *must* have lines like this in the MAIN part:
+
+    ..start
+    [TEXT]...
+
+As long as this is present, movact will run. To extend your movact story, you add references:
+
+    ..subpart
+    Some text..
+    You have a choice:
+    .subpart2 Go here!
+
+This will display the two first lines in the subpart as standard text, and the final line as a reference to another subpart named 'subpart2'. How references are shown differ in frontends.
+References can be anywhere in a subpart. They can be both before and after standard text. It is the period ('.') that tells movact that it's a reference.
+If a subpart has no references, movact ends the game.
+
+
+Commenting and escaping
+-----------------------
+As movact documents can grow quite large, it is important to be able to comment one's story. There are three ways of using comments in movact:
+
+   + /*...*/
+   + //...
+   + #...
+
+So, you can do something like this:
+
+    ..tree
+    You approach the tree.# The human approaches the tree
+    The squirrel/* ..where did that come from ? */ helps you.
+    It seems nice.// Squirrel turns evil in ..forest!
+
+This will not print "# He approaches the tree", "/* ..where did that come from ? */" and "// Squirrel turns evil in ..forest!".
+Note that there are no limits as to how /*...*/ can be arranged. They can easily span several lines.
+
+Now, allowing all these different types of comments has its disadvantages. Sometimes people may want to use the '#' character as a non-comment character. To do this, they must escape it using a backslash. So this:
+
+    ..tree
+    You are next to a tree\# and this is not a comment
+
+..will print "You are next to a tree# and this is not a comment". Note that it doesn't print the backslash.
+
+Of course comments are not the only textual things that you can escape. Apart from comments, you can escape periods (both '.', '..' and '...') as well as other things that haven't been explained yet. As a rule, whenever there's a special block of characters, you can escape it. This is generally true.
+
+If you want to show a backslash before escapable places, you have to type two backslashes. In normal places just one backslash will do.
+
+
+Special features
+----------------
+movact has several extra features for the advanced users.
+
+'---'
+~~~~~
+First, '---'. The way movact splits subparts is by reading when the next line that matches the regex '\.\..+' appears. All empty lines before that line are removed from the previous entry. To avoid this, one can append '---' to the very end of one's subpart. For example:
+
+    ..jupiter-arrival
+    The armadillo breaths heavily. It notices a bunch of empty lines.
+    .mars Escape!
+    
+    ---
+
+Normally, the empty lines would not be printed, but because the '---' is there, they are. The '\n---' is not printed, however. To print '---' at the end, just write this:
+
+    ..123
+    321
+    
+    \---
+
+You could also just do this:
+
+    ---
+    ---
+
+'[end]'
+~~~~~~~
+Normally you would just arrange your document like the ascii art diagram shows. You're not forced to do it that way, however. First of all, you can start with MAIN and end with META. But it's also possible to use MAIN and META interchangeably. This can be achieved by simply writing META, then MAIN, then META, etc. There is also another way, though. One can choose to use the '[end]' string, like this:
+
+    ...META
+    ..title
+    ABC
+    
+    ...MAIN
+    ..start
+    BCA
+    
+    [end]
+    ..start
+    Welcome to the alphabet story!
+
+After '[end]', the movact parser goes back to META. One could have typed '...META' instead of '[end]' and achieved the exact same result.
+'[end]' can also be escaped.
+
+'%$' and '$%'
+~~~~~~~~~~~~~
+Sometimes it can look nice with a string like this:
+#################################################
+But it would be annoying to type '\#\#\#' etc. This is why '%$' and '$%' exist. In any movact document, one can type '%$###########$%'. This will escape all the # and subsequently print all of them. It will not print '%$' and '$%'. As a matter of fact, '%$...$%' will escape everything escapable within the magic strings.
+These strings can also be escaped. To show a '%$', you'll have to either write '\%$' or '%$%$$%'. To show a '$%', just write '$%', as long as it isn't preceded by a '%$', in which case you'll have to write '\$%'.
+
+
+Errors
+------
+The movact parser wants everything to be in perfect shape. Everything must be certain. This is why it's happy to print error messages; as a matter of fact, the movact parser was stderr in its former life.
+...
+The point is, if the syntax or the organization of the content is odd, movact will print an error. But it will only print one error. If you fix that error and then try running movact again, there's a risk that you may still get an error, though this time a different one. If you have produced a large story, it can be troublesome to fix errors one by one. To get a proper answer, the movact parser itself has agreed to be interviewed.
+
+INTERVIEWER:   So, movact parser, why do you show only ONE -- as in the
+               number 1 -- error at a time? Is it not a bit odd?
+movact PARSER: No, I don't think so. In this world -- no, in this universe
+               -- people are using their lifes on fixing errors. This is
+               an unfortunte development, I think.
+INTERVIEWER:   But, isn't fixing errors, bugs and the like a good thing?
+               I mean, humans wrote programs and humans err, right?
+movact PARSER: Well, they do. But I'm not a human. I'm a piece of software.
+INTERVIEWER:   You were written by a human.
+movact PARSER: ... ERROR! ERROR! ERROR! CANNOT COMPREHEND. NOT A QUESTION.
+INTERVIEWER:   OK, easy now. I kind of get the gist that you you want
+               people to simply not make mistakes. Is this correct?
+movact PARSER: Yes.
+INTERVIEWER:   I see. But what if humans choose to modify your code?
+               Would that not mean that there is always a risk of having
+               new bugs introduced to your system?
+movact PARSER: No. While people may freely modify my code, it is important
+               to note that they are merely modifying copies of me. I am
+               who I am, and that fact cannot be changed. I am bug-free.
+INTERVIEWER:   I thank you for the interview.
+movact PARSER: ... ERROR! ERROR! ERROR! CANNOT COMPREHEND. NOT A QUESTION.
+
+The movact parser may have a few unknown quirks. It has ben fed with various different files, of which all seemed to work, but.. Please report any bugs to <ns@metanohi.org>.
+
+
+
+Less than important notes
+=========================
+Not everything can be considered important.
+
+Reason for choosing the name "movact"
+-------------------------------------
+It's a combination of the word "movie" and the word "act". Since the program is about reading fictional works, the name should also be fictional.
+
+
+Command-line tweaks (for the sake of completeness)
+--------------------------------------------------
+If you are using movact from a terminal or console, you should note that "-h", "--help", "-v" and "--version" are special arguments, as they can be used only when no file is present. To use a file that has a name similar to one of these arguments, type its filename twice. This is not necessary if you are using one of the real arguments, such as '-d' or '--pickle', along with the filename. This means that trying to load a file with the name "-h" requires you to write "movact -h -h".
+If you need to load a normal movact file that ends on ".pickled", you have to escape it, or movact will try to unpickle it. To escape it, place a backslash in front of it, like this:
+
+    $ movact \not-a-pickled-file.pickled
+
+If the name of your non-pickled file ends on ".pickled" but starts with a backslash, you have to do this:
+
+    $ movact \\not-a-pickled-file.pickled
+
+etc.
+
+When using movact-convert, note that case is ignored. "XML" and "xml" mean the same.
+
+
+Not reStructuredText
+--------------------
+This readme was not written in reStructuredText, though it may resemble it at some points.
+

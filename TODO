@@ -1,0 +1,7 @@
+ -  Make a proper install script that also makes the program appear
+    in the "Applications" menu on systems that support that
+ -  Create a DEB package
+ -  Improve the GTK frontend
+ -  Add a curses frontend
+ -  Add support for variables
+ -  Create a man page, eventually using help2man

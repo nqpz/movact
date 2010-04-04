@@ -1,0 +1,20 @@
+# Create menu
+		menu = gtk.Menu()
+		menu_item = gtk.MenuItem('Load')
+		menu_item.connect("activate", self.abc)
+		menu_item.show()
+		menu.append(menu_item)
+		
+		root_menu = gtk.MenuItem("Root Menu")
+		root_menu.show()
+		root_menu.set_submenu(menu)
+		
+		vbox = gtk.VBox(False, 0)
+		self.window.add(vbox)
+		vbox.show()
+		
+		menu_bar = gtk.MenuBar()
+		vbox.pack_start(menu_bar, False, False, 2)
+		menu_bar.show()
+		
+		menu_bar.append (root_menu)

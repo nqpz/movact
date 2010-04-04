@@ -1,0 +1,6 @@
+v0.5.1:
+Fix in the JavaScript/HTML converter; now works when cookies are 
+disabled.
+
+v0.5:
+FIRST RELEASE
