@@ -36,6 +36,7 @@ from os.path import realpath, dirname
 import pygtk
 pygtk.require('2.0') # In reality 2.6
 import gtk
+import pango
 try:
 	# In any 'About' window, doing this will make it possible to click on links
 	from gnome import url_show
@@ -62,7 +63,9 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.\
 """
 
-CONTENT_SIZE	 = 500 , 300 # Width and height of content
+SCALE = 1
+CONTENT_SIZE	 = 500 * SCALE , 300 * SCALE # Width and height of content
+FONT             = 'Sans {}'.format(10 * SCALE)
 SCROLLBARS_EXTRA =  60 ,  30 # Extra width and height available for scrollbars
 
 
@@ -75,6 +78,13 @@ class Label(gtk.Label):
 		gtk.Label.__init__(self, txt)
 		self.set_line_wrap(True)
 		self.set_size_request(width, -1)
+                self.modify_font(pango.FontDescription(FONT))
+
+class Button(gtk.Button):
+	"""Creates a gtk button, then modifies it"""
+	def __init__(self, txt):
+		gtk.Button.__init__(self, txt)
+                self.get_child().modify_font(pango.FontDescription(FONT))
 
 class Runner(GenericRunner):
 	def __init__(self, **args):
@@ -113,13 +123,13 @@ class Runner(GenericRunner):
 		GenericRunner.__init__(self, **args)
 		
 		# Buttons to the right
-		open_button = gtk.Button(self.meta['open button'])
-		self.back_button = gtk.Button(self.meta['back button'])
-		self.reset_button = gtk.Button(self.meta['reset button'])
-		self.load_button = gtk.Button(self.meta['load button'])
-		self.save_button = gtk.Button(self.meta['save button'])
-		quit_button = gtk.Button(self.meta['quit button'])
-		about_button = gtk.Button('About')
+		open_button = Button(self.meta['open button'])
+		self.back_button = Button(self.meta['back button'])
+		self.reset_button = Button(self.meta['reset button'])
+		self.load_button = Button(self.meta['load button'])
+		self.save_button = Button(self.meta['save button'])
+		quit_button = Button(self.meta['quit button'])
+		about_button = Button('About')
 		
 		open_button.connect('clicked', self.prepare_open)
 		self.back_button.connect('clicked', self.back)
@@ -199,7 +209,7 @@ class Runner(GenericRunner):
 					text = ''
 				
 				p = self.meta['points'][refs_num]
-				button = gtk.Button(p[0] + x[2])
+				button = Button(p[0] + x[2])
 				button.connect('clicked', self.goto, x[1])
 				self.c_box.pack_start(button, False, False, 0)
 				refs_num += 1
